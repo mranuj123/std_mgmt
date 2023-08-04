@@ -18,8 +18,12 @@ const feeSchema=new mongoose.Schema({
     },
     Fee_installement:[
         {
-           type:String,
-        required:true, 
+          paydate:{
+            type:String,
+          },
+          paydue:{
+            type:String,
+          }
         }
     ],
         
