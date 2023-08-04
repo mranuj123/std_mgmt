@@ -1,0 +1,46 @@
+const mongoose=require('mongoose')
+const settingSchema=new mongoose.Schema({
+    Setting_name:{
+        type:String,
+        required:true,
+    },
+    Setting_adress:{
+        type:String,
+        required:true,
+    },
+    Setting_logo:{
+        type:String,
+        required:true,
+    },
+    Setting_icon:{
+        type:String,
+    },
+    Setting_phone:{
+        type:String,
+        required:true,
+    },
+    Setting_email:{
+        type:String,
+        required:true,
+    },
+    Setting_location:{
+        type:String,
+        required:true,
+    },
+    Setting_FB:{
+        type:String,
+    },
+    Setting_IG:{
+        type:String,
+    },
+    Setting_LI:{
+        type:String,
+    },
+    Setting_TW:{
+        type:String,
+    },
+    Setting_TT:{
+        type:String,
+    }
+},{timestamps:true})
+module.exports=mongoose.model('Setting',settingSchema)
