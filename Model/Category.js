@@ -6,7 +6,7 @@ const categorySchema=new mongoose.Schema({
     },
     Category_des:{
         type:String,
-        required:true,
+      
         
     },
         
